@@ -50,31 +50,12 @@ $(document).ready(function(){
 			    // Formato de datos que se espera en la respuesta
 			    dataType: "json",
 			    // URL a la que se enviará la solicitud Ajax
-			    url: "http://192.168.0.103/occmundial.com/configurar.php",
+			    url: "http://tayme.esy.es/aplicaciones/peticiones/cargadatos.php",
 			    //url: "192.168.0.103"
 			})
 			 .done(function( data, textStatus, jqXHR ) {
 			     if ( console && console.log ) {
 			         console.log( "La solicitud se ha completado correctamente." );
-			         console.log(data.nombre_evento);
-			         console.log(data.fecha_evento);
-			         console.log(data.ubicacion_evento);
-			         console.log(data.nombre_completo_expo);
-			         console.log(data.nombre_empresa_expo);
-			         console.log(data.email_expo);
-			         console.log(data.agregar_comentario_expo);
-			         console.log(data.telefono_expo);
-			         console.log(data.agregar_favoritos_expo);
-			         console.log(data.celular_expo);
-			         console.log(data.nombre_completo_universidad);
-			         console.log(data.contrasena_universidad);
-			         console.log(data.email_universidad);
-			         console.log(data.agregar_comentario_universidad);
-			         console.log(data.telefono_universidad);
-			         console.log(data.agregar_favoritos_universidad);
-			         console.log(data.celular_universidad);
-
-
 			         $(".exito_guardado").show("slow");
 			         $(".subir_bd").hide("slow");
 			         $(".menu_principal").show("slow");
