@@ -40,72 +40,70 @@
         <title>Occmundial</title>
     </head>
     <body>
-    
+    <style type="text/css">
+    h2{
+        color: #7f7f7f;
+        margin-bottom: 50px;
+    }
+ 
+    </style>
 
 <div data-role="page">
-  <div data-role="main" class="ui-content">
-        <div class="">
-            <img style="display:inline;margin-top:10px" src="img/logo.png" height="auto" width="40%">
-        </div>
-        <p class="header_nombre_usuario" style="color:#8C8383;font-size:20px;text-align:right; position: absolute; top:35px; right:55px;" ></p>
-        <div class="ico_user">
-            <img style="display: block; margin-left: auto;position: absolute; top:20px; right:10px;" src="img/user.png" height="auto" width="4%">
-        </div>
-        <h2 class="header_titulo">Nuevo Evento</h2>
-    <div class="contenido">
+    <div data-role="main" class="ui-content">
+            <div class="">
+                <img style="display:inline;margin-top:10px" src="img/logo.png" height="auto" width="40%">
+            </div>
+            <p class="header_nombre_usuario" style="color:#8C8383;font-size:20px;text-align:right; position: absolute; top:35px; right:55px;" ></p>
+            <div class="ico_user">
+                <img style="display: block; margin-left: auto;position: absolute; top:20px; right:10px;" src="img/user.png" height="auto" width="4%">
+            </div>
+            <h2 class="header_titulo">Nuevo Evento</h2>
+        <div class="contenido">
+            <div class="" id="alert"></div>
+            <div class="row" style="height:500px;width:100%;display:table">
+                <div class="col-md-4 col-sm-4" style="height:500px;margin-top:5%" >
+                    <div class="text-center">
+                        <h2>Datos del evento</h2>
+                    </div>
+                        <div class="form-group">
+                            <input placeholder="Nombre del evento" class="form-control" style="height:40px;" type="text" id="nombre_evento">
+                        </div>
+                        <div class="form-group">
+                            <input placeholder="Fecha del evento" class="form-control datepicker" style="height:40px;" type="date" id="fecha_evento">
+                        </div>
+                        <div class="form-group">
+                            <input placeholder="Ubicación del evento" class="form-control" style="height:40px;" type="text" id="ubicacion_evento">
+                        </div>
+                </div>
+                <div class="col-md-4 col-sm-4" style="height:500px;margin-top:5%">
+                    <div class="text-center">
+                        <h2>Tipo de Evento</h2>
+                    </div>
+                    <label name="nombre_empresa" id="nuevoEvento-input3" class="item item-input ">
+                        <!--<input placeholder="Empresa" type="text" >-->
+                        <legend style="border:0px;text-align:center;color:#5b9bd5 !important">Empresa</legend>
+                        <input type="radio" name="radio-evento" id="radio-empresa1" value="empresa" >
+                    </label>
+                    <label name="nombre_universidad" id="nuevoEvento-input3" class="item item-input ">
+            <!--            <input placeholder="Universidad" type="text" >-->
+                        <legend style="border:0px;text-align:center;color:#5b9bd5 !important">Universidad</legend>
+                        <input type="radio" name="radio-evento" id="radio-universidad1" value="universidad" >
+                     </label>
+
+                </div>
+                <div class="col-md-4 col-sm-4" style="height:500px;margin:auto 0">
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br>
+                    <button class=" button button-positive button-large " style="border-radius:15px 15px 15px 15px;background:#00b0f0 !important;color:white;border:0px" id="nuevoEvento-button6">Siguiente</button>
+                    <button class=" button button-positive button-large " style="border-radius:15px 15px 15px 15px;background:#00b0f0 !important;color:white;border:0px" id="atras">Atras</button>
+                </div>
+            </div>
 
 
-<table data-role="table" data-mode="reflow" class="ui-responsive">
-  <thead>
-    <tr>
-      <th>Datos del evento</th>
-      <th>Tipo de Evento</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <label name="nombre_evento" id="nuevoEvento-input3" class="item item-input ">
-            <input placeholder="Nombre del evento" type="text" id="nombre_evento">
-        </label>
-    </td>
-    <td>
-        <label name="nombre_empresa" id="nuevoEvento-input3" class="item item-input ">
-            <!--<input placeholder="Empresa" type="text" >-->
-            <legend>Empresa</legend>
-            <input type="radio" name="radio-evento" id="radio-empresa1" value="empresa" >
-        </label>
-    </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>
-            <label name="fecha_evento" id="nuevoEvento-input4" class="item item-input ">
-                <input placeholder="Fecha del evento" type="text" id="fecha_evento">
-            </label>
-      </td>
-      <td>
-            <label name="nombre_universidad" id="nuevoEvento-input3" class="item item-input ">
-<!--            <input placeholder="Universidad" type="text" >-->
-            <legend>Universidad</legend>
-            <input type="radio" name="radio-evento" id="radio-universidad1" value="universidad" >
-      </label>
-      </td>
-      <td><button class=" button button-positive button-large " style="border-radius:15px 15px 15px 15px;" id="nuevoEvento-button6">Siguiente</button></td>
-    </tr>
-    <tr>
-      <td>
-        <label name="ubicacion_evento" id="nuevoEvento-input5" class="item item-input ">
-            <input placeholder="Ubicación del evento" type="text" id="ubicacion_evento">
-        </label>
-        </td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-    </div>
+        </div>
     </div>
 </div>
 

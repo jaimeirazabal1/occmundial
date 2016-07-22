@@ -95,3 +95,20 @@ margin-top: -80px;
 	text-align: center;
 	margin:auto;
 }
+
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+  padding:10px;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  padding:10px;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  padding:10px;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+  padding:10px;
+}
+input[type='text'],input[type='password']{
+	padding:10px;
+}

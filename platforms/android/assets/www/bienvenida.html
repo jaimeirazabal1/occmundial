@@ -39,7 +39,31 @@
     </head>
     <body>
     
+<style type="text/css">
+    .item{
+        max-width: 100%;
+        border-radius: 20px;
+        border:0px;
+        text-align: center;
+        padding: 0px;
+    }
+    .item button{
+        height: 100%;
+        padding:100px 25px;
+        font-size: 25px;
+    }
+       @media screen and (min-width: 768px){
+        @media screen and (max-width: 1024px){
+            .btn{
+                font-size: 20px !important;
+            }
+        }
+            .btn{
+                font-size: 15px !important;
+            }             
 
+    }
+</style>
 <div data-role="page">
   <div data-role="main" class="ui-content">
         <div class="">
@@ -52,14 +76,23 @@
         <h3 class=" " style="color: rgb(108, 102, 102); font-weight: 400; text-align: right;position: absolute; top:70px; right:10px;" id="bienvenida-heading15">¡Bienevid@ <span class="header_nombre_usuario"></span>!</h3>
         <div class="los_botones">
             <div class="row">
-                <div class="col-md-4">
-                    <button class="btn button button-positive button-large button-outline botones "  id="bienvenida-button3"><p>Eventos Anteriores</p></button>
+                <div class="col-md-4 col-sm-4">
+                    <div class="item">
+                        
+                        <button class="btn button button-positive button-large button-outline botones "  id="bienvenida-button3">Eventos Anteriores</button>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <button class="btn button button-positive button-large button-outline botones" data-transition="flow"  id="bienvenida-button4">Nuevo Evento</button>
+                <div class="col-md-4 col-sm-4">
+                    <div class="item">
+                        
+                        <button class="btn button button-positive button-large button-outline botones" data-transition="flow"  id="bienvenida-button4">Nuevo Evento</button>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <button class="btn button button-positive button-large button-outline botones"  id="bienvenida-button5">Configuración</button>
+                <div class="col-md-4 col-sm-4">
+                    <div class="item">
+                        
+                        <button class="btn button button-positive button-large button-outline botones"  id="bienvenida-button5">Configuración</button>
+                    </div>
                 </div>
             </div>
                 

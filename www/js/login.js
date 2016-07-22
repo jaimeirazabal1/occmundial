@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	$("#usuario").val("");
+   	$("#contrasena").val("");
    $("#login").click(function(event) {
    		event.preventDefault();
    		var usuario = $("#usuario").val();

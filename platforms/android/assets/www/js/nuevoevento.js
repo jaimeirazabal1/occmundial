@@ -9,16 +9,21 @@ $(document).ready(function(){
 		radio_evento = $('input:radio[name=radio-evento]:checked').val();
 		var fecha_evento = $('#fecha_evento').val();
 		var ubicacion_evento = $("#ubicacion_evento").val();
+		if (nombre_evento && radio_evento && fecha_evento && ubicacion_evento) {
 
-		window.localStorage.setItem("nombre_evento",nombre_evento);
-		//window.localStorage.setItem("tipo_evento",radio_evento);
-		window.localStorage.setItem("fecha_evento",fecha_evento);
-		window.localStorage.setItem("ubicacion_evento",ubicacion_evento);
+			window.localStorage.setItem("nombre_evento",nombre_evento);
+			//window.localStorage.setItem("tipo_evento",radio_evento);
+			window.localStorage.setItem("fecha_evento",fecha_evento);
+			window.localStorage.setItem("ubicacion_evento",ubicacion_evento);
 
-		if(radio_evento === "empresa"){
-			window.location="comenzarregistroexpo.html";
+			if(radio_evento === "empresa"){
+				window.location="comenzarregistroexpo.html";
+			}else{
+				window.location="comenzarregistrouni.html";
+			}
 		}else{
-			window.location="comenzarregistrouni.html";
+			$("#alert").html("<p>Todos los datos son obligatorios</p>");
+			$("#alert").addClass("alert alert-danger")
 		}
 
 
@@ -31,5 +36,8 @@ $(document).ready(function(){
 //		window.location="comenzarregistrouni.html";
 	});
 
-
+	$("#atras").click(function(){
+		console.log("evento")
+		window.location="bienvenida.html";
+	});
 });
