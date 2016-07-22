@@ -84,31 +84,5 @@ margin-top: -80px;
 .centrar_tabla_3{
 	margin-top: 30px;
 }
-.btn{
-	border:0px;
-	background-color: white !important;
-	padding-top:60px;
-	padding-bottom:60px;
-	border-radius: 10px;
-	height: 150px;
-	vertical-align: center;
-	text-align: center;
-	margin:auto;
-}
 
 
-input::-webkit-input-placeholder { /* WebKit browsers */
-  padding:10px;
-}
-input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  padding:10px;
-}
-input::-moz-placeholder { /* Mozilla Firefox 19+ */
-  padding:10px;
-}
-input:-ms-input-placeholder { /* Internet Explorer 10+ */
-  padding:10px;
-}
-input[type='text'],input[type='password']{
-	padding:10px;
-}

@@ -52,78 +52,92 @@
         <h2 class="header_titulo">Registro Expoempleo 16</h2>        
      
 
-
-<table data-role="table" data-mode="reflow" class="ui-responsive">
-<thead>
-    <tr>
-        <th></th>
-        <th></th>
-    </tr>
-</thead>
-  <tbody>
-    <tr>
-      <td>
-        <label name="nombre_completo" id="nombre_completo" class="item item-input ">
-            <input placeholder="Nombre Completo" type="text" id="nombre_completo_expo">
-        </label>
-    </td>
-    <td>
-        <label name="nombre_empresa" id="nombre_empresa" class="item item-input ">
-            <input placeholder="Nombre de la empresa" type="text" id="nombre_empresa_expo">
-        </label>
-    </td>
-    </tr>
-    <tr>
-        <td>
-            <label name="email" id="email" class="item item-input ">
-                <input placeholder="Email" type="text" id="email_expo">
+<div class="col-md-6" style="float:none;margin:0 auto">
+    <table data-role="table" data-mode="reflow" class="ui-responsive">
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+      <tbody>
+        <tr>
+          <td>
+            <label name="nombre_completo" id="nombre_completo" class="item item-input ">
+                <input placeholder="Nombre Completo" type="text" id="nombre_completo_expo">
             </label>
         </td>
         <td>
-            <label name="agregar_comentario" id="agregar_comentario" class="item item-input ">
-                <input placeholder="Agregar comentario" type="text" id="agregar_comentario_expo">
+            <label name="nombre_empresa" id="nombre_empresa" class="item item-input ">
+                <input placeholder="Nombre de la empresa" type="text" id="nombre_empresa_expo">
             </label>
         </td>
-    </tr>
-    <tr>
-        <td>
-            <label name="telefono" id="telefono" class="item item-input ">
-                <input placeholder="Teléfono" type="text" id="telefono_expo">
-            </label>
-        </td>
-        <td>
-            <label name="agregar_favorito" id="agregar_favorito" class="item item-input ">
-               <input name="agregar_favoritos" type="checkbox" id="agregar_favoritos_expo">Agregar Favoritos
-            </label>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <label name="celular" id="celular" class="item item-input ">
-                <input placeholder="Celular" type="text" id="celular_expo">
-            </label>
-        </td>
-        <td>    
-                
-                    <input name="checkbox-mini-0" id="checkbox-mini-0" data-mini="true" type="checkbox">
-                    <label for="checkbox-mini-0">
-                        <small>Acepto términos y condiciones y aviso de privacidad </small>
-                    </label>
-                    <small>
-                        <a href="terminosycondiciones.html" class="ui-link"> Leer los términos y condiciones</a>
-                    </small>
-                
-                    
-                
-                
-                
-        </td>
-    </tr>
-  </tbody>
-</table>
-<div style="text-align:center">
-    <p class="etiqueta error_etiqueta oculto error_terminos">Debe aceptar los términos para guardar</p>
-    <button class=" ui-btn-active ui-btn ui-input-btn ui-corner-all ui-shadow ui-btn-inline " style="border-radius:15px 15px 15px 15px;" id="nuevoEvento-button6">Guardar</button>
+        </tr>
+        <tr>
+            <td>
+                <label name="email" id="email" class="item item-input ">
+                    <input placeholder="Email" type="text" id="email_expo">
+                </label>
+            </td>
+            <td>
+                <label name="agregar_comentario" id="agregar_comentario" class="item item-input ">
+                    <input placeholder="Agregar comentario" type="text" id="agregar_comentario_expo">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label name="telefono" id="telefono" class="item item-input ">
+                    <input placeholder="Teléfono" type="text" id="telefono_expo">
+                </label>
+            </td>
+            <td>
+                <label name="agregar_favorito" id="agregar_favorito" class="item item-input ">
+                   <input name="agregar_favoritos" type="checkbox" id="agregar_favoritos_expo">Agregar Favoritos
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label name="celular" id="celular" class="item item-input ">
+                    <input placeholder="Celular" type="text" id="celular_expo">
+                </label>
+            </td>
+            <td>    
+                <div class="row">
+                    <div class="col-md-10"><input name="checkbox-mini-0" id="checkbox-mini-0" data-mini="true" type="checkbox">
+                        <label for="checkbox-mini-0">
+                            Acepto términos y condiciones y aviso de privacidad
+                        </label></div>
+                    <div class="col-md-1">
+                        <br><a href="terminosycondiciones.html" class="ui-link"> Leer</a></div>
+                </div> 
+                          
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                        <p class="etiqueta error_etiqueta oculto error_terminos">Debe aceptar los términos para guardar</p>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div style="text-align:center">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button class="btn btn-primary btn-lg" style="background:#00b0f0 !important;color:white" id="" onclick="location.href='comenzarregistroexpo.html'">Atras</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn btn-primary btn-lg" style="background:#00b0f0 !important;color:white" id="nuevoEvento-button6">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </td>
+        </tr>
+      </tbody>
+    </table>
 </div>
 
 

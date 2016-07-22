@@ -35,11 +35,18 @@
         <link rel="stylesheet" type="text/css" href="css/ionic.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">         
         <link rel="stylesheet" type="text/css" href="css/mi.css">
+        <link rel="stylesheet" type="text/css" href="css/btn.css">
         <title>Occmundial</title>
     </head>
     <body>
     
-
+<style type="text/css">
+    @media (min-width: 320px){
+        .ui-content{
+            padding:0px !important;
+        }
+    }
+</style>
 
 <div data-role="page">
   <div data-role="main" class="ui-content" style="padding:100px">
@@ -47,7 +54,7 @@
   	<h2 class=" " style="color: rgb(108, 102, 102); font-weight: 600; text-align: right; display:inline; float:right; margin:40px">App de registro</h2>
     <div class="row" >
         <div class="col-md-4"></div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-xs-12">
             <div style="height:50%"></div>
             <form action="" autocomplete="off">
                 <div class="form-group">
