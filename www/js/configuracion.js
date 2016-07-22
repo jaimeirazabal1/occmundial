@@ -76,8 +76,8 @@ $(document).ready(function(){
 
 
 			         $(".exito_guardado").show("slow");
-			         $("#bienvenida-button4").hide("slow");
-			         $("#bienvenida-button3").show("slow");
+			         $(".subir_bd").hide("slow");
+			         $(".menu_principal").show("slow");
 
 			     }
 			     
@@ -89,8 +89,8 @@ $(document).ready(function(){
 			         //console.log(data.tipo_usuario);
 			         //console.log(data.tipo_contrasena);
 			         $(".error_guardado").show("slow");
-			         $("#bienvenida-button4").hide("slow");
-			         $("#bienvenida-button3").show("slow");
+			         $(".subir_bd").hide("slow");
+			         $(".menu_principal").show("slow");
 			         
 			         setTimeout(function(){ 
 			         	$(".usuario_clave_error").hide("slow");
