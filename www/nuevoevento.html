@@ -41,16 +41,128 @@
     </head>
     <body>
     <style type="text/css">
+
+
+
+
+
+
     h2{
         color: #7f7f7f;
         margin-bottom: 50px;
     }
  
+    @media (min-width: 320px){
+        
+              .logo{
+                    width: 100% !important;
+                    display:block !important;
+                    margin:auto !important;
+                    text-align: center !important;
+                }
+                .logo img{
+                    margin:20px auto !important;
+                    width:200px !important;
+                }
+                #bienvenida-heading15{
+                    color: rgb(108, 102, 102); 
+                    font-size: 20px !important;
+                    font-weight: 400; 
+                    text-align: center !important;
+                    position: relative !important; 
+                    top:none !important; 
+                    right:none !important;
+                    margin: 0px auto 0px !important;
+
+                }
+                .header_nombre_usuario{
+                    color:#8C8383;
+                    font-size:20px;
+                    width: 100% !important;
+                    margin:30px auto !important;
+                    text-align:center !important; 
+                    position: relative !important; 
+                    top:0px !important; 
+                    right:0px !important;
+                }
+                .ico_user img{
+                    display: block;
+                    width: 50px !important;
+                    margin: 10px auto -40px auto;
+                    position: relative !important; 
+                    top:0 !important; 
+                    right:0 !important;
+                }
+                .item,.item button{
+
+                    display: block !important;
+                    float:left !important;
+                    width:100% !important;
+                    height: 10% !important;
+                    padding: 0px !important;
+                    margin: 2px !important;
+                    text-align: center !important;
+                    font-size: 1.1em !important;
+
+                }
+                .header_titulo{
+                    font-size:1.8em !important;
+                } 
+                .form_text{
+                    height:auto !important;
+                    margin-top:0px !important;
+                }
+                html,body{
+                    overflow-y:scroll !important;
+                }
+              
+    }
+    @media (min-width: 768px) {
+        .header_titulo{
+            width: 380px !important;
+            text-align: center !important;
+        }
+        .form_text{
+            height:auto !important;
+            margin-top:0px !important;
+            width: 100% !important;
+        }
+        br{
+            display:none !important;
+        }
+        button{
+            width: 710px !important;
+        }
+    }    
+    @media (max-width: 360px) {
+      
+    }
+    @media (min-width: 980px) {
+              button{
+            width: 900px !important;
+        }
+    }
+    @media (min-width: 1280px) {
+                  button{
+            width: 1200px !important;
+        }
+    }
+    @media (max-width: 1024px) {
+ 
+    }    
+    
+    
+    
+
+    
+    
+
+    
     </style>
 
 <div data-role="page">
     <div data-role="main" class="ui-content">
-            <div class="">
+            <div class="logo">
                 <img style="display:inline;margin-top:10px" src="img/logo.png" height="auto" width="40%">
             </div>
             <p class="header_nombre_usuario" style="color:#8C8383;font-size:20px;text-align:right; position: absolute; top:35px; right:55px;" ></p>
@@ -60,8 +172,8 @@
             <h2 class="header_titulo">Nuevo Evento</h2>
         <div class="contenido">
             <div class="" id="alert"></div>
-            <div class="row" style="height:500px;width:100%;display:table">
-                <div class="col-md-4 col-sm-4" style="height:500px;margin-top:5%" >
+            <div class="" style="height:500px;width:100%;display:table">
+                <div class="col-md-4 col-sm-4 form_text" style="height:500px;margin-top:5%" >
                     <div class="text-center">
                         <h2>Datos del evento</h2>
                     </div>
@@ -75,7 +187,7 @@
                             <input placeholder="Ubicación del evento" class="form-control" style="height:40px;" type="text" id="ubicacion_evento">
                         </div>
                 </div>
-                <div class="col-md-4 col-sm-4" style="height:500px;margin-top:5%">
+                <div class="col-md-4 col-sm-4 form_text" style="height:500px;margin-top:5%">
                     <div class="text-center">
                         <h2>Tipo de Evento</h2>
                     </div>

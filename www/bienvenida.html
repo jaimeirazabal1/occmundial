@@ -41,81 +41,158 @@
     <body>
     
 <style type="text/css">
-    .item{
-        max-width: 100%;
-        border-radius: 20px;
-        border:0px;
-        text-align: center;
-        padding: 0px;
+
+
+
+.item{
+    border-radius: 10px;
+    border:0px;
+}
+    
+    @media (min-width: 320px){
+        
+              .logo{
+                    width: 100% !important;
+                    display:block !important;
+                    margin:auto !important;
+                    text-align: center !important;
+                }
+                .logo img{
+                    margin:20px auto !important;
+                    width:200px !important;
+                }
+                #bienvenida-heading15{
+                    color: rgb(108, 102, 102); 
+                    font-size: 20px !important;
+                    font-weight: 400; 
+                    text-align: center !important;
+                    position: relative !important; 
+                    top:none !important; 
+                    right:none !important;
+                    margin: 0px auto 0px !important;
+
+                }
+                .header_nombre_usuario{
+                    color:#8C8383;
+                    font-size:20px;
+                    width: 100% !important;
+                    margin: auto !important;
+                    text-align:center !important; 
+                    position: relative !important; 
+                    top:0px !important; 
+                    right:0px !important;
+                }
+                .ico_user img{
+                    display: block;
+                    width: 50px !important;
+                    margin: 10px auto -40px auto;
+                    position: relative !important; 
+                    top:0 !important; 
+                    right:0 !important;
+                }
+                .item,.item button{
+
+                    display: block !important;
+                    float:left !important;
+                    width:100% !important;
+                    height: 10% !important;
+                    padding: 0px !important;
+                    margin: 2px !important;
+                    text-align: center !important;
+                    font-size: 1.1em !important;
+
+                }      
+      
+
+              
     }
-    .item button{
-        height: 100%;
-        padding:100px 25px;
-        font-size: 25px;
-    }
-    @media screen and (max-width: 320px){
-        .item button{
-            padding:0px;
-            display: block;
-            float:left;
-        }
-        .ui-content{
-            padding: 0px;
-        }
-    }
-    @media screen and (min-width: 768px){
-        @media screen and (max-width: 1024px){
-            .btn{
-                font-size: 20px !important;
-            }
-        }
-            .btn{
-                font-size: 15px !important;
-            }             
+    @media (max-width: 360px) {
 
     }
+    @media (max-width: 980px) {
+
+    }
+    @media (min-width: 1280px) {
+                .item,.item button{
+
+                    display: block !important;
+                    float:left !important;
+                    width:100% !important;
+                    height: 200px !important;
+                    padding: 0px !important;
+                    margin: 2px !important;
+                    text-align: center !important;
+                    font-size: 1.1em !important;
+
+                } 
+    }
+    @media (min-width: 1024px) {
+                .item,.item button{
+
+                    display: block !important;
+                    float:left !important;
+                    width:100% !important;
+                    height: 200px !important;
+                    padding: 0px !important;
+                    margin: 2px !important;
+                    text-align: center !important;
+                    font-size: 1.1em !important;
+
+                }     }
+    @media (min-width:1920px){
+                .item,.item button{
+
+                    display: block !important;
+                    float:left !important;
+                    width:100% !important;
+                    height: 200px !important;
+                    padding: 0px !important;
+                    margin: 2px !important;
+                    text-align: center !important;
+                    font-size: 1.1em !important;
+
+                }         
+    }
+
+
 </style>
-<div data-role="page">
-  <div data-role="main" class="ui-content">
-        <div class="">
-            <img style="display:inline;margin-top:10px" src="img/logo.png" height="auto" width="40%">
-        </div>
-        <p class="header_nombre_usuario" style="color:#8C8383;font-size:20px;text-align:right; position: absolute; top:35px; right:55px;" ></p>
-        <div class="ico_user" onclick="location.href='index.html'">
-            <img style="display: block; margin-left: auto;position: absolute; top:20px; right:10px;" src="img/user.png" height="auto" width="4%">
-        </div>
-        <h3 class=" " style="color: rgb(108, 102, 102); font-weight: 400; text-align: right;position: absolute; top:70px; right:10px;" id="bienvenida-heading15">¡Bienevid@ <span class="header_nombre_usuario"></span>!</h3>
-        <div class="los_botones">
-            <div class="row">
-                <div class="col-md-4 ">
-                    <div class="item">
-                        
-                        <button class="btn button button-positive button-large button-outline botones "  id="bienvenida-button3">Eventos Anteriores</button>
-                    </div>
+        <div data-role="page">
+          <div data-role="main" class="ui-content">
+                <div class="logo">
+                    <img style="display:inline;margin-top:10px" src="img/logo.png">
                 </div>
-                <div class="col-md-4 ">
-                    <div class="item">
-                        
-                        <button class="btn button button-positive button-large button-outline botones" data-transition="flow"  id="bienvenida-button4">Nuevo Evento</button>
-                    </div>
+                <p class="header_nombre_usuario" style="color:#8C8383;font-size:20px;text-align:right; position: absolute; top:35px; right:55px;" ></p>
+                <div class="ico_user" onclick="location.href='index.html'">
+                    <img style="display: block; margin-left: auto;position: absolute; top:20px; right:10px;" src="img/user.png" height="auto" width="4%">
                 </div>
-                <div class="col-md-4 ">
-                    <div class="item">
+                <h3 style="color: rgb(108, 102, 102); font-weight: 400; text-align: right;position: absolute; top:70px; right:10px;" id="bienvenida-heading15">¡Bienevid@ <span class="header_nombre_usuario"></span>!</h3>
+                <div class="los_botones">
+                    
+                        <div class="col-md-4">
+                            <div class="item">
+                                
+                                <button class="btn button button-positive button-large button-outline botones "  id="bienvenida-button3">Eventos Anteriores</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item">
+                                
+                                <button class="btn button button-positive button-large button-outline botones" data-transition="flow"  id="bienvenida-button4">Nuevo Evento</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item">
+                                
+                                <button class="btn button button-positive button-large button-outline botones"  id="bienvenida-button5">Configuración</button>
+                            </div>
+                        </div>
+                  
                         
-                        <button class="btn button button-positive button-large button-outline botones"  id="bienvenida-button5">Configuración</button>
-                    </div>
+                    
+                    
                 </div>
             </div>
-                
-            
-            
         </div>
-</div>
-</div>
-
-
-
-
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>

@@ -33,7 +33,7 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/ionic.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">         
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/mi.css">
         <link rel="stylesheet" type="text/css" href="css/btn.css">
         <title>Occmundial</title>
@@ -41,51 +41,66 @@
     <body>
     
 <style type="text/css">
-    @media (min-width: 320px){
-        .ui-content{
-            padding:0px !important;
+    .item{
+        max-width: 100%;
+        border-radius: 20px;
+        border:0px;
+        text-align: center;
+        padding: 0px;
+    }
+    .item button{
+        height: 100%;
+        padding:100px 25px;
+        font-size: 25px;
+    }
+   
+    @media screen and (min-width: 768px){
+        @media screen and (max-width: 1024px){
+            .btn{
+                font-size: 20px !important;
+            }
         }
-        .titulo_registro{
-            font-size: 20px;
-            /*text-align: center !important;*/
-            width: 100%;
-            margin: 40px 100px 10px 10px !important;
-        }
-        .logo{
-            width:200px;
-            text-align: center !important;
-            margin-left: 50px;
-            margin-top: 50px !important;
-        }
+            .btn{
+                font-size: 15px !important;
+            }             
+
     }
 </style>
-
 <div data-role="page">
-  <div data-role="main" class="ui-content" style="padding:100px">
-  	<img style="display:inline;margin-top:10px" class="logo" src="img/logo.png" height="auto" width="40%">
-  	<h2 class="titulo_registro" style="color: rgb(108, 102, 102); font-weight: 600; text-align: right; display:inline; float:right; margin:40px">App de registro</h2>
-    <div class="row" >
-        <div class="col-md-4"></div>
-        <div class="col-md-4 col-xs-12">
-            <div style="height:50%"></div>
-            <form action="" autocomplete="off">
-                <div class="form-group">
-                   
-                        <input placeholder="Usuario"  class="form-control" style="width:100%"  type="text" id="usuario">
-                </div>
-                <div class="form-group">
-                    
-                    <input placeholder="Contrasena"  class="form-control" style="width:100%" type="password" id="contrasena">
-                </div>
-            	<button class="button button-positive  button-block" id="login"> Login </button>
-            	<div class="etiqueta error_etiqueta oculto usuario_clave_error">Error en el nombre de usuario o contrasena</div>
-            </form>
-            
+    <div data-role="main" class="">
+        <div class="">
+            <img style="display:inline;margin-top:10px" src="img/logo.png" height="auto" width="40%">
         </div>
-        <div class="col-md-4"></div>
+        <p class="header_nombre_usuario" style="color:#8C8383;font-size:20px;text-align:right; position: absolute; top:35px; right:55px;" ></p>
+        <div class="ico_user" onclick="location.href='index.html'">
+            <img style="display: block; margin-left: auto;position: absolute; top:20px; right:10px;" src="img/user.png" height="auto" width="4%">
+        </div>
+        <h3 class=" " style="color: rgb(108, 102, 102); font-weight: 400; text-align: right;position: absolute; top:70px; right:10px;" id="bienvenida-heading15">¡Bienevid@ <span class="header_nombre_usuario"></span>!</h3>
+        <div class="los_botones">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="item">
+                        
+                        <button class="btn button button-positive button-large button-outline botones "  id="bienvenida-button3">Eventos Anteriores</button>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="item">
+                        
+                        <button class="btn button button-positive button-large button-outline botones" data-transition="flow"  id="bienvenida-button4">Nuevo Evento</button>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="item">
+                        
+                        <button class="btn button button-positive button-large button-outline botones"  id="bienvenida-button5">Configuración</button>
+                    </div>
+                </div>
+            </div> 
+
+        </div>
     </div>
-  </div>
-</div> 
+</div>
 
 
 
@@ -93,8 +108,7 @@
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
-        <script type="text/javascript" src="js/jquery.md5.js"></script>
-        <script type="text/javascript" src="js/login.js"></script>
+        <script type="text/javascript" src="js/header.js"></script>
+        <script type="text/javascript" src="js/bienvenida.js"></script>
     </body>
 </html>
-
