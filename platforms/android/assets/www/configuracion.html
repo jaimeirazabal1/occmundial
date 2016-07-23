@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <!--
     Licensed to the Apache Software Foundation (ASF) under one
@@ -7,9 +9,7 @@
     to you under the Apache License, Version 2.0 (the
     "License"); you may not use this file except in compliance
     with the License.  You may obtain a copy of the License at
-
     http://www.apache.org/licenses/LICENSE-2.0
-
     Unless required by applicable law or agreed to in writing,
     software distributed under the License is distributed on an
     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -39,26 +39,94 @@
     </head>
     <body  style="background:#f2f2f2 !important">
     
+ <style type="text/css">
 
+
+
+   @media (min-width: 320px){
+        
+              .logo{
+                    width: 100% !important;
+                    display:block !important;
+                    margin:auto !important;
+                    text-align: center !important;
+                }
+                .logo img{
+                    margin:20px auto !important;
+                    width:200px !important;
+                }
+                #bienvenida-heading15{
+                    color: rgb(108, 102, 102); 
+                    font-size: 20px !important;
+                    font-weight: 400; 
+                    text-align: center !important;
+                    position: relative !important; 
+                    top:none !important; 
+                    right:none !important;
+                    margin: 0px auto 0px !important;
+
+                }
+                .header_nombre_usuario{
+                    color:#8C8383;
+                    font-size:20px;
+                    width: 100% !important;
+                    margin: auto !important;
+                    text-align:center !important; 
+                    position: relative !important; 
+                    top:0px !important; 
+                    right:0px !important;
+                }
+                .ico_user img{
+                    display: block;
+                    width: 50px !important;
+                    margin: 10px auto 20px auto;
+                    position: relative !important; 
+                    top:0 !important; 
+                    right:0 !important;
+                }
+                    
+       #bienvenida-button4, button{
+           width: 50% !important;
+           padding: 0px !important;
+           margin: 100px auto !important;
+       }
+       .button{
+           margin: 0px !important;
+       }
+       .contenedor{
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        margin-left:0 !important;
+        margin-top: 0 !important;
+           margin: auto !important;
+           text-align: center !important;
+       }
+      
+
+              
+    }
+    </style>   
 <div data-role="page">
   <div data-role="main" class="ui-content">
-        <div class="">
+        <div class="logo">
             <img style="display:inline;margin-top:10px" src="img/logo.png" height="auto" width="40%">
         </div>
         <p class="header_nombre_usuario" style="color:#8C8383;font-size:20px;text-align:right; position: absolute; top:35px; right:55px;" ></p>
         <div class="ico_user">
             <img style="display: block; margin-left: auto;position: absolute; top:20px; right:10px;" src="img/user.png" height="auto" width="4%">
         </div>
-        <h2 class="header_titulo">Configuración</h2>
+        <center>Configuración</center>
 
 
-       <div class="contenedor">
+       <div class="contenedor subir_bd">
             <button class=" button button-positive button-large button-outline botones" data-transition="flow" style="border:0px;border-radius:15px 15px 15px 15px;background-color:white" id="bienvenida-button4">Subir base de datos</button>
         </div>
 
-        <div class="contenedor menu_principal oculto">
-            <button class=" button button-positive button-large button-outline botones" data-transition="flow" style="border-radius:15px 15px 15px 15px;" id="bienvenida-button3">Ir al menu principal</button>
+       <div class="contenedor">
+            <button class=" button button-positive button-large button-outline botones" data-transition="flow" style="border:0px;border-radius:15px 15px 15px 15px;background-color:white" id="bienvenida-button3">Atras</button>
         </div>
+       
 
 
 

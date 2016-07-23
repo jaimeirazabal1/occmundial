@@ -2,8 +2,6 @@ $(document).ready(function(){
 	//window.localStorage.clear();
 	$("#nuevoEvento-button6").click(function(event) {
 		event.preventDefault();
-	//$("body").on("click","#nuevoEvento-button6",function()){
-		//event.preventDefault();
 		var radio_evento = "";
 		var nombre_evento = $("#nombre_evento").val();
 		radio_evento = $('input:radio[name=radio-evento]:checked').val();
@@ -25,15 +23,6 @@ $(document).ready(function(){
 			$("#alert").html("<p>Todos los datos son obligatorios</p>");
 			$("#alert").addClass("alert alert-danger")
 		}
-
-
-		/*console.log(nombre_evento);
-		console.log(radio);
-		console.log(fecha_evento);
-		console.log(ubicacion_evento);*/
-
-///		window.location="comenzarregistroexpo.html";
-//		window.location="comenzarregistrouni.html";
 	});
 
 	$("#atras").click(function(){
