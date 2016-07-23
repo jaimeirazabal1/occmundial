@@ -38,20 +38,80 @@
         <title>Occmundial</title>
     </head>
     <body>
-    
+   <style type="text/css">
+ @media (min-width: 320px){
+        
+              .logo{
+                    width: 100% !important;
+                    display:block !important;
+                    margin:auto !important;
+                    text-align: center !important;
+                }
+                .logo img{
+                    margin:20px auto !important;
+                    width:200px !important;
+                }
+                #bienvenida-heading15{
+                    color: rgb(108, 102, 102); 
+                    font-size: 20px !important;
+                    font-weight: 400; 
+                    text-align: center !important;
+                    position: relative !important; 
+                    top:none !important; 
+                    right:none !important;
+                    margin: 0px auto 0px !important;
+
+                }
+                .header_nombre_usuario{
+                    color:#8C8383;
+                    font-size:20px;
+                    width: 100% !important;
+                    margin: auto !important;
+                    text-align:center !important; 
+                    position: relative !important; 
+                    top:0px !important; 
+                    right:0px !important;
+                }
+                .ico_user img{
+                    display: block;
+                    width: 50px !important;
+                    margin: 10px auto 20px auto;
+                    position: relative !important; 
+                    top:0 !important; 
+                    right:0 !important;
+                }
+                .item,.item button{
+
+                    display: block !important;
+                    float:left !important;
+                    width:100% !important;
+                    height: 10% !important;
+                    padding: 0px !important;
+                    margin: 2px !important;
+                    text-align: center !important;
+                    font-size: 1.1em !important;
+
+                }      
+   center{
+     font-size:17px !important;
+   }
+
+              
+    }
+   </style> 
 
 <div data-role="page">
   <div data-role="main" class="ui-content">
-<div class="">
+<div class="logo">
             <img style="display:inline;margin-top:10px" src="img/logo.png" height="auto" width="40%">
         </div>
-        <p class="header_nombre_usuario" style="color:#8C8383;font-size:20px;text-align:right; position: absolute; top:35px; right:55px;" ></p>
-        <div class="ico_user">
+        <p class="header_nombre_usuario" onclick="location.href='index.html'" style="color:#8C8383;font-size:20px;text-align:right; position: absolute; top:35px; right:55px;" ></p>
+        <div class="ico_user" onclick="location.href='index.html'">
             <img style="display: block; margin-left: auto;position: absolute; top:20px; right:10px;" src="img/user.png" height="auto" width="4%">
         </div>
-        <h2 class="header_titulo">Registro Universidad</h2>        
+        <center>Registro Universidad</center>        
   
-        <div class="row">
+  
             <div class="col-md-4 col-sm-4"></div>
             <div class="col-md-4 col-sm-4">
                 <div class="text-center">
@@ -59,7 +119,7 @@
                     <button class="btn btn-primary btn-lg" style="margin-top:50%;background:#00b0f0 !important;color:white;border:0px" data-transition="flow" id="bienvenida-button4">Comenzar Registro</button>
                 </div>
             </div>
-        </div>
+   
 </div>
 </div>
 

@@ -39,6 +39,13 @@
     </head>
     <body>
 <style type="text/css">
+ 
+    
+
+
+    
+
+ 
     
 
     @media(min-width:320px){
@@ -96,16 +103,46 @@
         .header_titulo{
             font-size:14px !important;
         }
-        html,body{
+        html,body,.ui-page .ui-page-theme-a .ui-page-active{
             overflow-y:scroll !important;
+            width: 100% !important;
         }
         p{
             text-align: justify !important;
             padding: 2px !important;
         }
+        center{
+            font-size: 0.8em !important;
+        }
+        #bienvenida-button4{
+            width: 100% !important;
+        }
+        .contenedor{
+            position: relative !important;
+            top: 0% !important;
+            left:  0% !important;
+            margin-left:  0% !important;
+            margin-top:  0% !important;
+        }
 }
 
-</style>    
+@media (min-width:980px){
+    .contenedor{
+             position: relative !important;
+            top: 0% !important;
+            left:  0% !important;
+            margin-left:  0% !important;
+            margin-top:  0% !important;   
+           width: 50% !important;
+        margin: auto !important;
+    }
+}
+
+
+
+
+
+</style> 
 
 <div data-role="page">
   <div data-role="main" class="ui-content">
@@ -113,7 +150,7 @@
             <img style="display:inline;margin-top:10px" src="img/logo.png" height="auto" width="40%">
         </div>
         <p class="header_nombre_usuario" style="color:#8C8383;font-size:20px;text-align:right; position: absolute; top:35px; right:55px;" ></p>
-        <div class="ico_user">
+        <div class="ico_user" onclick="location.href='index.html'">
             <img style="display: block; margin-left: auto;position: absolute; top:20px; right:10px;" src="img/user.png" height="auto" width="4%">
         </div>
         <h2 class="header_titulo">Registro Universidad completado</h2>        
